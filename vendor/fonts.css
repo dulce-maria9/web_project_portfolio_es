@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url(./fonts/ArchivoBlack/ArchivoBlack-Regular.woff2) format("woff2"),
+    url(./fonts/ArchivoBlack/ArchivoBlack-Regular.woff) format(".woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(./fonts/OpenSans/OpenSans-Regular.woff2) format("woff2"),
+    url(./fonts/OpenSans/OpenSans-Bold.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(./fonts/OpenSans/OpenSans-SemiBold.woff2) format("woff2"),
+    url(./fonts/OpenSans/OpenSans-SemiBold.woff) format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(./fonts/OpenSans/OpenSans-Bold.woff2) format("woff2"),
+    url(./fonts/OpenSans/OpenSans-Bold.woff) format("woff");
+  font-weight: 700;
+}
