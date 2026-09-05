@@ -1,8 +1,10 @@
 .content {
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
   width: 83%;
 }
 
 .skills__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
 }
