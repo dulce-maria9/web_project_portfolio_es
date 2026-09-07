@@ -1,10 +1,124 @@
 .content {
-  margin: 100px auto;
-  display: flex;
-  width: 83%;
+  margin: 0 auto;
+  width: 83.33%;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 100px;
 }
 
 .skills__title {
   font-family: "Archivo Black", sans-serif;
   font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.skills__items {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.skills__item {
+  width: 50px;
+}
+
+.projects__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.projects__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: calc((100% - 20px) / 2);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card__content {
+  background-color: rgb(28, 28, 28);
+  padding: 30px;
+  min-height: 340px;
+}
+
+.card__title {
+  margin-bottom: 20px;
+}
+
+.card__links {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.card__link {
+  text-decoration: none;
+  align-items: center;
+}
+
+.card__link:hover {
+  opacity: 0.5;
+}
+
+.card__link-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.card__link-demo {
+  color: rgba(109, 109, 255, 1);
+}
+
+.card__link-github {
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1023px) {
+  .projects__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    font-size: 28px;
+  }
+  .skills__items {
+    grid-template-columns: repeat(3, 30px);
+    row-gap: 30px;
+  }
+
+  .skills__item {
+    width: 30px;
+  }
+
+  .projects__title {
+    font-size: 28px;
+  }
 }
