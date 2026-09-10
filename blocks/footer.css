@@ -1,9 +1,21 @@
 .footer {
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 40px);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(109, 109, 255, 1);
+  filter: blur(400px);
 }
 
 .footer__title {
@@ -35,6 +47,13 @@
 .footer__icon {
   width: 24px;
   height: 24px;
+}
+
+.footer__title,
+.footer__email,
+.footer__icons {
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {

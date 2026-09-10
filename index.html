@@ -35,11 +35,13 @@
             <li><a class="presentation__link" href="#">Hablemos</a></li>
           </ul>
         </div>
-        <img
-          class="presentation__photo"
-          src="/images/photo.jpeg"
-          alt="Foto de presentación"
-        />
+        <div class="presentation__photo-container">
+          <img
+            class="presentation__photo"
+            src="/images/photo.jpeg"
+            alt="Foto de presentación"
+          />
+        </div>
       </header>
       <main class="content">
         <section class="skills">
@@ -61,11 +63,28 @@
           <h3 class="projects__title">Proyectos destacados</h3>
           <div class="projects__cards">
             <article class="card">
-              <img
-                class="card__image"
-                src="./images/cafe-de-especialidad.png"
-                alt="Página web de una cafetería"
-              />
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./images/cafe-triple-espresso.png"
+                  alt="Página web de una cafetería"
+                />
+
+                <div class="card__image-overlay">
+                  <div class="card__image-icons">
+                    <img
+                      class="card__image-icon"
+                      src="./images/html5.svg"
+                      alt="HTML"
+                    />
+                    <img
+                      class="card__image-icon"
+                      src="./images/css3.svg"
+                      alt="CSS"
+                    />
+                  </div>
+                </div>
+              </div>
               <div class="card__content">
                 <p class="card__title">Página web de una cafetería</p>
                 <p class="card__description">
@@ -103,11 +122,27 @@
               </div>
             </article>
             <article class="card">
-              <img
-                class="card__image"
-                src="./images/my-project.png"
-                alt="proyecto web"
-              />
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./images/place-holder.png"
+                  alt="proyecto web"
+                />
+                <div class="card__image-overlay">
+                  <div class="card__image-icons">
+                    <img
+                      class="card__image-icon"
+                      src="./images/javascript.svg"
+                      alt="JavaScript"
+                    />
+                    <img
+                      class="card__image-icon"
+                      src="./images/react.svg"
+                      alt="React"
+                    />
+                  </div>
+                </div>
+              </div>
               <div class="card__content">
                 <p class="card__title">Mi proyecto</p>
                 <p class="card__description">Descripción del proyecto.</p>
