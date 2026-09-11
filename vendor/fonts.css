@@ -2,7 +2,7 @@
   font-family: "Archivo Black";
   src:
     url(./fonts/ArchivoBlack/ArchivoBlack-Regular.woff2) format("woff2"),
-    url(./fonts/ArchivoBlack/ArchivoBlack-Regular.woff) format(".woff");
+    url(./fonts/ArchivoBlack/ArchivoBlack-Regular.woff) format("woff");
   font-weight: 400;
 }
 
